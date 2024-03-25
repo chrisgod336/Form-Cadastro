@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/04584fe10e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container-item">
+            <div class="item-back-gorund">
+                <img src="assets/images/logo.png" width="50%"/>
+            </div>
+        </div>
+        <div class="container-item">
+            <form class="item-form" id="register-form" >
+                <div class="form-title">
+                    <h1>Cadastre-se</h1>
+                </div>
+                <div class="title-decoration">
+                    .
+                </div>
+                <div class="form-body">
+                    <div class="body-row">
+                        <div class="row-item-2">
+                            <label for="name-input" class="input-label">
+                                <div class="input-title">
+                                    Primeiro nome
+                                </div>
+                                <input type="text" maxlength="50" class="form-input" id="name" name="name" placeholder="Digite seu primeiro nome"/>
+                            </label>
+                        </div>
+                        <div class="row-item-2">
+                            <label for="last-name-input" class="input-label">
+                                <div class="input-title">
+                                    Sobrenome
+                                </div>
+                                <input type="text" maxlength="50" class="form-input" id="last-name" name="last-name" placeholder="Digite seu sobrenome"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="body-row">
+                        <div class="row-item-1">
+                            <label for="birth-date-input" class="input-label">
+                                <div class="input-title">
+                                    Data de nascimento
+                                </div>
+                                <input type="date" class="form-input" id="birth-date" name="birth-date" placeholder="dd/mm/aaaa"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="body-row">
+                        <div class="row-item-2">
+                            <label for="state-select" class="input-label">
+                                <div class="input-title">
+                                    Estado/Distrito
+                                </div>
+                                <select type="text" class="form-input" id="state" name="state">
+                                    <option value="" id="state-option-00" name="state-option-00" class="form-select-option">Selecione</option>
+                                    <option value="AC" id="state-option-01" name="state-option-01" class="form-select-option">Acre</option>
+                                    <option value="AL" id="state-option-02" name="state-option-02" class="form-select-option">Alagoas</option>
+                                    <option value="AP" id="state-option-03" name="state-option-03" class="form-select-option">Amapá</option>
+                                    <option value="AM" id="state-option-04" name="state-option-04" class="form-select-option">Amazonas</option>
+                                    <option value="BH" id="state-option-05" name="state-option-05" class="form-select-option">Bahia</option>
+                                    <option value="CE" id="state-option-06" name="state-option-06" class="form-select-option">Ceará</option>
+                                    <option value="ES" id="state-option-07" name="state-option-07" class="form-select-option">Espírito Santo</option>
+                                    <option value="GO" id="state-option-08" name="state-option-08" class="form-select-option">Goiás</option>
+                                    <option value="MA" id="state-option-09" name="state-option-09" class="form-select-option">Maranhão</option>
+                                    <option value="MT" id="state-option-10" name="state-option-10" class="form-select-option">Mato Grosso</option>
+                                    <option value="MS" id="state-option-11" name="state-option-11" class="form-select-option">Mato Grosso do Sul</option>
+                                    <option value="MG" id="state-option-12" name="state-option-12" class="form-select-option">Minas Gerais</option>
+                                    <option value="PA" id="state-option-13" name="state-option-13" class="form-select-option">Pará</option>
+                                    <option value="PB" id="state-option-14" name="state-option-14" class="form-select-option">Paraíba</option>
+                                    <option value="PR" id="state-option-15" name="state-option-15" class="form-select-option">Paraná</option>
+                                    <option value="PE" id="state-option-16" name="state-option-16" class="form-select-option">Pernambuco</option>
+                                    <option value="PI" id="state-option-17" name="state-option-17" class="form-select-option">Piauí</option>
+                                    <option value="RJ" id="state-option-18" name="state-option-18" class="form-select-option">Rio de Janeiro</option>
+                                    <option value="RN" id="state-option-19" name="state-option-19" class="form-select-option">Rio Grande do Norte</option>
+                                    <option value="RS" id="state-option-20" name="state-option-20" class="form-select-option">Rio Grande do Sul</option>
+                                    <option value="RO" id="state-option-21" name="state-option-21" class="form-select-option">Rondônia</option>
+                                    <option value="RR" id="state-option-22" name="state-option-22" class="form-select-option">Roraima</option>
+                                    <option value="SC" id="state-option-23" name="state-option-23" class="form-select-option">Santa Catarina</option>
+                                    <option value="SP" id="state-option-24" name="state-option-24" class="form-select-option">São Paulo</option>
+                                    <option value="SE" id="state-option-25" name="state-option-25" class="form-select-option">Sergipe</option>
+                                    <option value="TO" id="state-option-26" name="state-option-26" class="form-select-option">Tocantins</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="row-item-2">
+                            <label for="city-input" class="input-label">
+                                <div class="input-title">
+                                    Cidade
+                                </div>
+                                <input type="text" maxlength="50" class="form-input" id="city" name="city" placeholder="Digite sua cidade"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="body-row">
+                        <div class="row-item-2">
+                            <label for="email-input" class="input-label">
+                                <div class="input-title">
+                                    E-mail
+                                </div>
+                                <input type="email" maxlength="200" class="form-input" id="email" name="email" placeholder="Digite seu e-mail"/>
+                            </label>
+                        </div>
+                        <div class="row-item-2">
+                            <label for="phone-input" class="input-label">
+                                <div class="input-title">
+                                    Celular
+                                </div>
+                                <input type="text" minlength ="14" maxlength ="14" class="form-input" id="phone" name="phone" placeholder="(XX)XXXXX-XXXX" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="body-row">
+                        <div class="row-item-2">
+                            <label for="password-input" class="input-label">
+                                <div class="input-title">
+                                    Senha
+                                </div>
+                                <input type="password" minlength ="6" maxlength ="20" class="form-input" id="password" name="password" placeholder="Digite sua senha"/>
+                            </label>
+                        </div>
+                        <div class="row-item-2">
+                            <label for="password2-input" class="input-label">
+                                <div class="input-title">
+                                    Confirme a senha
+                                </div>
+                                <input type="password" minlength ="6" maxlength ="20" class="form-input" id="password2" name="password2" placeholder="Repita sua senha"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="body-row">
+                        <div class="row-item-1">
+                            <label for="gender-input" class="input-label">
+                                <div class="input-title">
+                                    Gênero
+                                </div>
+                                <div class="ratio-row">
+                                    <div>
+                                        <input type="radio" class="form-ratio" id="gender-1" name="gender" value="M"/> <span class="ratio-item">Masculino</span> 
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="form-ratio" id="gender-2" name="gender" value="F"/> <span class="ratio-item">Feminino</span>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="form-ratio" id="gender-3" name="gender" value="O"/> <span class="ratio-item">Outro</span> 
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="form-ratio" id="gender-4" name="gender" value="N"/> <span class="ratio-item">Não informar</span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <button class="form-button">Confirmar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+
+        :root {
+            /* Cores */
+            --main-color: #007BFF; 
+            --danger-color: #FF6347;
+            --white-color: #FFFFFF;
+            --black-color: #000000;
+            --gray-color: #C6C6C6;
+
+            /* Tamanhos de fonte */
+            --titel-size: 40px;
+            --input-size: 14;
+
+            /* Familias de fontes */
+            --main-font: Fredoka, Arial, sans-serif
+        }
+
+        html{
+            width: 100%;
+            height: 100%;
+            background-color: var(--main-color);
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title{
+            font-size: var(--titel-size);
+            font-family: var(--main-font);
+            color: var(--white-color);
+            font-weight: bold;
+        }
+
+        .button{
+            width: 300px;
+            height: 40px;
+            background-color: var(--white-color);
+            font-weight: 600;
+            font-family: var(--main-font);
+            font-size: var(--input-size);
+            color: var(--main-color);
+            border: none;
+            border-radius: 150px;
+            box-shadow: 0 0 5px var(--black-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+            Cadastro realizado com sucesso!
+        </h1>
+        <button onclick="window.location.href = 'index.html'" class="button">
+            Voltar
+        </button>
+    </div>
+</body>
+</html>
